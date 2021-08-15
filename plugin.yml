@@ -1,1 +1,12 @@
+---
+name: EnderCooldown
+version: 1.0.0
+main: JonyGamesYT9\EnderCooldown\EnderCooldown
+api: [3.0.0]
+author: JonyGamesYT9 
 
+permissions:
+ endercooldown.bypass:
+    default: op 
+    description: "The User who has this permission will not be affected by the cooldown"
+...
