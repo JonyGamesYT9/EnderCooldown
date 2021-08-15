@@ -65,6 +65,9 @@ class EnderCooldown extends PluginBase implements Listener
   {
     $item = $event->getItem();
     $player = $event->getPlayer();
+    if ($player->hasPermission("endercooldown.bypass")) {
+      return;
+    }
     if ($event->getAction() === PlayerInteractEvent::RIGHT_CLICK_AIR) {
       if ($item instanceof EnderPearl) {
         if (isset($this->cooldowns[$player->getName()])) {
