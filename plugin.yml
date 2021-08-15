@@ -8,5 +8,5 @@ author: JonyGamesYT9
 permissions:
  endercooldown.bypass:
     default: op 
-    description: "The User who has this permission will not be affected by the cooldown"
+    description: "The User who has this permission will not be affected by the cooldown."
 ...
