@@ -1,1 +1,8 @@
-
+---
+# =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+version: 1 # Don't change this
+# =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+message-addcooldown: "§l§8(§eCooldown§8) §r§7You used the ender pearl wait to use it again."
+message-hascooldown: "§l§8(§cError§8) §r§7You have a cooldown of: §e{cooldown} §7seconds." # Tip: Only in this message you can use {cooldown}
+cooldown-time: 15 # Default: 15 seconds.
+...
