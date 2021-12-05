@@ -68,7 +68,6 @@ class EnderCooldown extends PluginBase implements Listener
     if ($player->hasPermission("endercooldown.bypass")) {
       return;
     }
-    if ($event->getAction() === PlayerInteractEvent::RIGHT_CLICK_AIR) {
       if ($item instanceof EnderPearl) {
         if (isset($this->cooldowns[$player->getName()]) and time() - $this->cooldowns[$player->getName()] < $this->config->get("cooldown-time")) {
           $event->cancel();
@@ -76,7 +75,6 @@ class EnderCooldown extends PluginBase implements Listener
           $player->sendMessage(str_replace(["&", "{cooldown}"], ["§", $time], $this->config->get("message-hascooldown")));
         } else {
           $this->cooldowns[$player->getName()] = (time() + $this->config->get("cooldown-time"));
-        }
       }
     }
   }
